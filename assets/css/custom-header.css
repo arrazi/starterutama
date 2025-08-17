@@ -1,0 +1,94 @@
+/* ===== MAIN HEADER STYLE ===== */
+.gh-head.imgur-header {
+  background: #1A1A1B;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.gh-head.imgur-header .gh-head-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+/* Logo (Left) */
+.gh-head-logo-container {
+  flex: 0 0 auto;
+}
+
+.gh-head.imgur-header .gh-head-logo img {
+  height: 30px;
+  width: auto;
+}
+
+/* Search Bar (Center) */
+.imgur-search-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 20px;
+}
+
+.imgur-search {
+  width: 100%;
+  max-width: 400px;
+}
+
+.imgur-search input {
+  width: 100%;
+  padding: 8px 15px;
+  border-radius: 4px;
+  border: none;
+  background: #282829;
+  color: white;
+}
+
+/* Auth Button (Right) */
+.gh-head-actions {
+  flex: 0 0 auto;
+}
+
+.gh-button.imgur-auth-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #263670;
+  color: white;
+  border-radius: 4px;
+  height: 36px;            
+  min-width: 90px;         
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  white-space: nowrap;
+  padding: 0 16px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .gh-head.imgur-header .gh-head-inner {
+    padding: 0 10px;
+    gap: 10px;
+  }
+  
+  .imgur-search-container {
+    margin: 0 10px;
+  }
+  
+  .gh-head.imgur-header .gh-head-logo img {
+    height: 24px;
+  }
+  
+  .gh-button.imgur-auth-btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}

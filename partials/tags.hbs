@@ -1,0 +1,10 @@
+<div class="tags-container">
+  {{#foreach tags}}
+    <div class="tag-card" data-tag="{{slug}}">
+      <div class="tag-content">
+        <div class="tag-title">{{name}}</div>
+        <div class="tag-count">{{count.posts}} Posts</div>
+      </div>
+    </div>
+  {{/foreach}}
+</div>
